@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>
+          Sign-up for our 30-day trial. <span> No credit card required.</span>
+        </p>
+      </div>
+      <div class="bottom">
+        <div class="flex1">
+          <p><span id="views">100K</span> PAGEVIEWS</p>
+          <p><span id="price1">$16.00</span> / month</p>
+        </div>
+        <div class="flex2">
+          <div class="range">
+            <p id="range"></p>
+            <div id="slidercircle">
+              <img id="slider" src="./images/icon-slider.svg" alt="" />
+            </div>
+          </div>
+          <p><span id="price2">$16.00</span> / month</p>
+        </div>
+        <div class="flex3">
+          <p>Monthly Billing</p>
+          <div class="toggle">
+            <p id="toggle" class="init"></p>
+          </div>
+          <p>Yearly Billing <span>25% discount</span><span>-25%</span></p>
+        </div>
+
+        <div class="flex4">
+          <div>
+            <p>Unlimited websites</p>
+            <p>100% data ownership</p>
+            <p>Email reports</p>
+          </div>
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Jonathan-Hart Peter T.</a>.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

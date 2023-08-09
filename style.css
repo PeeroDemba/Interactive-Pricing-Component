@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(230, 100%, 99%);
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern.svg);
+  background-position: left top -50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 0;
+}
+
+.top {
+  background-image: url(./images/pattern-circles.svg);
+  background-position: center top -100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top h1 {
+  margin-bottom: 0.7rem;
+}
+.top p {
+  color: hsl(225, 20%, 60%);
+}
+
+.bottom {
+  margin-top: 3rem;
+  background-color: white;
+  width: 38rem;
+  height: 28rem;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  box-shadow: 1px 1px 10px 5px #eee;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex1 p {
+  color: hsl(225, 20%, 60%);
+  font-weight: bold;
+}
+.flex1 p:nth-child(2) span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.flex2 {
+  height: 4rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex2 > p {
+  display: none;
+}
+
+.range {
+  width: 100%;
+  height: 0.6rem;
+  border-radius: 1rem;
+  background-color: hsl(224, 65%, 95%);
+}
+
+#range {
+  width: 40%;
+  height: 0.6rem;
+  border-radius: 1rem;
+  background-color: hsl(174, 77%, 80%);
+}
+
+#slidercircle {
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: hsl(174, 86%, 45%);
+  border-radius: 50%;
+  box-shadow: 0px 11px 7px 7px hsl(174, 77%, 80%);
+  position: relative;
+  top: -270%;
+  left: 40%;
+}
+#slidercircle:hover {
+  cursor: pointer;
+}
+
+#slider {
+  position: relative;
+  top: 28%;
+  left: 22%;
+  width: 1.5rem;
+}
+
+.flex3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+}
+.flex3 p {
+  color: hsl(225, 20%, 60%);
+  font-size: 1rem;
+}
+.flex3 span {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  font-weight: bold;
+}
+.flex3 span:nth-child(2) {
+  display: none;
+}
+
+.toggle {
+  width: 3rem;
+  height: 1.7rem;
+  border-radius: 1rem;
+  background-color: hsl(223, 50%, 87%);
+  position: relative;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+.toggle:hover {
+  background-color: hsl(174, 77%, 80%);
+  cursor: pointer;
+}
+
+#toggle {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.flex4 {
+  border-top: 1px solid hsl(223, 50%, 87%);
+  position: relative;
+  right: 2.5rem;
+  width: 38rem;
+  padding: 1.7rem 2.5rem;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex4 p {
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  color: hsl(225, 20%, 60%);
+}
+.flex4 p::before {
+  content: url(./images/icon-check.svg);
+  margin-right: 1rem;
+}
+.flex4 button {
+  font-size: 0.9rem;
+  width: 11rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
+  color: hsl(226, 100%, 87%);
+  background-color: hsl(227, 35%, 25%);
+}
+.flex4 button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 767px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern.svg);
+    background-position: left top -50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 0;
+  }
+  .top h1 {
+    font-size: 1.4rem;
+  }
+  .top p {
+    text-align: center;
+  }
+  .top p span {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .bottom {
+    margin-top: 3rem;
+    background-color: white;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+  }
+  .flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex1 p {
+    color: hsl(225, 20%, 60%);
+  }
+  .flex1 p:nth-child(2) {
+    display: none;
+  }
+  .flex1 p:nth-child(2) span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+  }
+  .flex2 {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .flex2 > p {
+    display: block;
+    margin-top: 2.5rem;
+  }
+  .flex2 > p span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+  }
+  .flex3 {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% + 1rem);
+    margin-top: 3rem;
+  }
+  .flex3 p {
+    color: hsl(225, 20%, 60%);
+    font-size: 0.7rem;
+  }
+  .flex3 span {
+    display: none;
+  }
+  .flex3 span:nth-child(2) {
+    display: inline;
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.4rem;
+    margin-right: 0rem;
+  }
+  .flex3 .toggle {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
+  .flex4 {
+    border-top: 1px solid hsl(223, 50%, 87%);
+    position: relative;
+    right: 2rem;
+    width: 20rem;
+    height: 13rem;
+    padding: 1.5rem 2rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex4 p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: hsl(225, 20%, 60%);
+    text-align: center;
+  }
+  .flex4 p::before {
+    content: url(./images/icon-check.svg);
+    margin-right: 1rem;
+  }
+}
